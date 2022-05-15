@@ -570,7 +570,7 @@ ul{list-style: none}
     #6e2585 100%);
   border-image-slice: 1;
   position: relative;
-  top: 5%;
+  top: %;
   left: 50%;
   perspective: 2000px
 }
@@ -620,7 +620,7 @@ ul{list-style: none}
 #timeline ul li .cont
 {
   width: 200px;
-  height: 170px;
+  height: 175px;
   padding: 25px 10px 10px;
   border: 2px solid transparent;
   border-radius: 4px;
@@ -628,7 +628,7 @@ ul{list-style: none}
   transform: translate(0, -55px);
   text-transform: capitalize;
   line-height: 150%;
-  font-size: 80%;
+  font-size: 70%;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
   top: 22px
