@@ -570,9 +570,9 @@ ul{list-style: none}
     #6e2585 100%);
   border-image-slice: 1;
   position: relative;
-  top: %;
+  top: 0%;
   left: 50%;
-  perspective: 2000px
+  perspective: 2000px;
 }
 
 #timeline ul li:after
@@ -1894,6 +1894,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
+  
   font-size: 14px;
   background: #37517e;
 }
@@ -1960,9 +1961,10 @@ section {
   font-weight: 600;
   color: #37517e;
 }
-#footer .footer-top .footer-contact p {
+#footer .footer-top .footer-contact pre {
   font-size: 14px;
-  line-height: 24px;
+  margin-top: 10px;
+  line-height: 19px;
   margin-bottom: 0;
   font-family: "Jost", sans-serif;
   color: #5e5e5e;
@@ -2007,9 +2009,9 @@ section {
   color: #47b2e4;
 }
 #footer .footer-top .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #47b2e4;
+  font-size: 20px;
+  display: hidden;
+  background: transparent;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -2020,11 +2022,11 @@ section {
   height: 36px;
   transition: 0.3s;
 }
-#footer .footer-top .social-links a:hover {
+/* #footer .footer-top .social-links a:hover {
   background: #209dd8;
   color: #fff;
   text-decoration: none;
-}
+} */
 #footer .footer-bottom {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -2039,6 +2041,33 @@ section {
 }
 #footer .credits a {
   transition: 0.3s;
+}
+#tooltip{
+  position: relative;
+  cursor: pointer;
+}
+#tooltiptext{
+  position: absolute;
+  color: white;
+  background-color: black;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 10px 15px;
+  border-radius: 7px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+/* #tooltiptext::before{
+  content: "";
+  position: absolute;
+  transform: translateX(-50%);
+  border: 15px solid;
+  
+} */
+#tooltip:hover #tooltiptext{
+  visibility: visible;
+  opacity: 1;
 }
 @media (max-width: 768px) {
   #footer .footer-bottom {
