@@ -2008,6 +2008,12 @@ section {
   text-decoration: none;
   color: #47b2e4;
 }
+#pop:hover{
+  animation: pop 0.6s linear 1;
+}
+@keyframes pop{
+  50%  {transform: scale(1.2);}
+}
 #footer .footer-top .social-links a {
   font-size: 20px;
   display: hidden;
