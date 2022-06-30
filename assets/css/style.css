@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: black;
+  overflow-x: hidden;
   
 }
 /* .video-header{
@@ -241,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #00182F;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
@@ -336,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #00182F;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -378,6 +379,68 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
+
+/*       video   */
+.video-header{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+ }
+.wrap{
+  max-width: 960px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: auto;
+  text-align: center;
+}
+.fullscreen-video-wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+
+}
+.fullscreen-video-wrap video{
+  min-height: 100%;
+  min-width: 100%;
+}
+  
+.header-overlay{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  opacity: 0.80;
+  align-items: center;
+}
+.header-content{
+  z-index: 2;
+  margin-top: 20%;
+  padding: 0 5rem;
+}
+.header-content h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+  margin-top: 30px;
+
+}
+.header-content h2{
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 2rem;
+  margin-top: 10px;
+}
+.my-btn{
+  padding: 1rem 1rem;
+}
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -622,7 +685,7 @@ ul{list-style: none}
   width: 200px;
   height: 175px;
   padding: 25px 10px 10px;
-  border: 2px solid transparent;
+  /* border: 2px solid transparent; */
   border-radius: 4px;
   -webkit-transform: translate(0, -55px);
   transform: translate(0, -55px);
@@ -783,7 +846,7 @@ ul{list-style: none}
 
 #timeline ul li:nth-child(even) .cont{left: -255px}
 
-#timeline ul li .cont:before,
+/* #timeline ul li .cont:before,
 #timeline ul li .cont:after
 {
   content: "";
@@ -792,7 +855,7 @@ ul{list-style: none}
   height: 0;
   position: absolute;
   border-style: solid;
-}
+} */
 
 #timeline ul li:nth-child(odd) .cont:before
 {
