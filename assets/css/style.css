@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 #header .logo img {
-  max-height: 80px;
+  max-height: 70px;
 }
 
 /*--------------------------------------------------------------
@@ -418,7 +418,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header-content{
   z-index: 2;
-  margin-top: 25%;
+  margin-top: 27%;
   padding: 0 5rem;
 }
 .header-content h1 {
@@ -592,7 +592,7 @@ ul{list-style: none}
 
 #timeline ul
 {
-  min-height: 950px;
+  min-height: 750px;
   border-top: 0;
   border-left: 4px solid transparent;
   border-left-color: #7ab800; /* Fullback */
